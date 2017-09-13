@@ -10,11 +10,11 @@
 #include<stdio.h>
 
 void scanfTest();
-
-int main(void){
-	scanfTest();
-	return 0;
-}
+//
+//int main(void){
+//	scanfTest();
+//	return 0;
+//}
 
 
 void scanfTest(){
