@@ -20,12 +20,12 @@ struct Student{
 
 void structPointerTest();
 
-int main(void){
-
-	structPointerTest();
-
-	return 0;
-}
+//int main(void){
+//
+//	structPointerTest();
+//
+//	return 0;
+//}
 
 
 void structPointerTest(){
