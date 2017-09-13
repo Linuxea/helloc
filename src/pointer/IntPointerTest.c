@@ -11,12 +11,12 @@
 void int2Test();
 void int3Test();
 
-int main(void){
-
-	int2Test();
-	int3Test();
-	return 0;
-}
+//int main(void){
+//
+//	int2Test();
+//	int3Test();
+//	return 0;
+//}
 
 void int2Test(){
 
