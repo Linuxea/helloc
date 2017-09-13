@@ -9,14 +9,14 @@
 
 int stepMulit(int);
 
-int main(void){
-
-	int result;
-	result = stepMulit(20);
-	printf("%d\n", result);
-
-	return 0;
-}
+//int main(void){
+//
+//	int result;
+//	result = stepMulit(20);
+//	printf("%d\n", result);
+//
+//	return 0;
+//}
 
 int stepMulit(int i){
 	if(i == 1)
