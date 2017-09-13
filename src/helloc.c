@@ -13,8 +13,8 @@
 
 extern int a,b; //声明  不是定义
 
-int main(void)
-{
-	add();
-	return 0;
-}
+//int main(void)
+//{
+//	add();
+//	return 0;
+//}
