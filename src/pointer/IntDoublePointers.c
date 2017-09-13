@@ -9,14 +9,14 @@
 
 #include<stdio.h>
 
-int main(void){
-
-	int ** p = NULL;
-	int a = 3;
-	int * po = &a;
-	p = &po;
-
-	printf("通过double pointer 来取值:%d",**p);
-
-	return 0;
-}
+//int main(void){
+//
+//	int ** p = NULL;
+//	int a = 3;
+//	int * po = &a;
+//	p = &po;
+//
+//	printf("通过double pointer 来取值:%d",**p);
+//
+//	return 0;
+//}
