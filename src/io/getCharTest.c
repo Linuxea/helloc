@@ -11,10 +11,10 @@
 void getCharTest();
 
 
-int main(void){
-	getCharTest();
-	return 0;
-}
+//int main(void){
+//	getCharTest();
+//	return 0;
+//}
 
 void getCharTest(){
 
