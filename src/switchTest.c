@@ -10,10 +10,10 @@
 
 void test2(int);
 
-int main(void){
-	test2(2);
-	return 1;
-}
+//int main(void){
+//	test2(2);
+//	return 1;
+//}
 
 
 void test2(int i){
