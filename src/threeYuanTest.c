@@ -12,11 +12,11 @@
 
 void switchTest(int);
 
-int main(void){
-	int b = 0;
-	switchTest(b);
-	return 1;
-}
+//int main(void){
+//	int b = 0;
+//	switchTest(b);
+//	return 1;
+//}
 
 void switchTest(int i){
 	printf("%d",i>0?i:-99);
