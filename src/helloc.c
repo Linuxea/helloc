@@ -9,9 +9,16 @@
  */
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <float.h>
 
-int main(void) {
-	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
-	return EXIT_SUCCESS;
+int main()
+{
+   int i = 0;
+   int j = 1;
+
+   for(;i<j;i++,j++){
+	   if(i == 100)
+		   break;
+	   printf("%d\n",i);
+   }
 }
