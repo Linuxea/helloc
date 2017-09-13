@@ -14,11 +14,11 @@ typedef float FUCK_FLOAT;
 
 void typedefTest();
 
-int main(void){
-
-	typedefTest();
-	return 0;
-}
+//int main(void){
+//
+//	typedefTest();
+//	return 0;
+//}
 
 void typedefTest(){
 	FUCK_INT sex = 79;
