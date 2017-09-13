@@ -11,13 +11,13 @@
 void staticMe(void);
 
 static int i = 0;
-
-int main(){
-	printf("%d",i);
-	staticMe();
-	staticMe();
-	return 0;
-}
+//
+//int main(){
+//	printf("%d",i);
+//	staticMe();
+//	staticMe();
+//	return 0;
+//}
 
 
 void staticMe(){
