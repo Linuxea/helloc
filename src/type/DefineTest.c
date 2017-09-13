@@ -16,11 +16,11 @@
 
 void defineTest();
 
-int main(void){
-
-	defineTest();
-	return 0;
-}
+//int main(void){
+//
+//	defineTest();
+//	return 0;
+//}
 
 
 void defineTest(){
