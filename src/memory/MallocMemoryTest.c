@@ -17,12 +17,12 @@
 void memoryTest(void);
 
 
-int main(void){
-
-	memoryTest();
-
-	return 1;
-}
+//int main(void){
+//
+//	memoryTest();
+//
+//	return 1;
+//}
 
 void memoryTest(void){
 
