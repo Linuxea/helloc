@@ -3,6 +3,7 @@
 
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
 
 struct Link{
 	char chs[100];
@@ -21,16 +22,16 @@ int main(void){
 
 struct Link * createLink(){
 
-	struct Link * head;
+	struct Link * head = malloc(sizeof(struct Link));
 	strcpy(head->chs, "i am a head");
 
-	struct Link* next;
+	struct Link* next = malloc(sizeof(struct Link));
 	strcpy(next->chs, "i am a head.next");
 
-	struct Link * next_next;
+	struct Link * next_next = malloc(sizeof(struct Link));
 	strcpy(next_next->chs, "i am a head.next_next");
 
-	struct Link * next_next_next;
+	struct Link * next_next_next = malloc(sizeof(struct Link));
 	strcpy(next_next_next->chs, "i am a head.next_next_next");
 
 	// 创建链的关系
