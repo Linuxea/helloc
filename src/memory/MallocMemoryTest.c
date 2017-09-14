@@ -27,10 +27,12 @@ int main(void){
 void memoryTest(void){
 
 	char *charAddress;
-	charAddress = malloc(65);
+	charAddress = malloc(25);
 	printf("%p\n", charAddress); //打印内存地址
 	strcat( charAddress, "She is in class 10th");
-	printf("%s\n", charAddress);  // 这种方式值得商榷
+	printf("%s\n", charAddress);
+	strcat(charAddress,"abaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"); // out of memory
+	printf("%s\n", charAddress);
 	free(charAddress);
 
 }
