@@ -15,10 +15,10 @@
 
 void paramsTest(int, ...);
 
-int main(void){
-	paramsTest(1,2,3,4);
-	return 1;
-}
+//int main(void){
+//	paramsTest(1,2,3,4);
+//	return 1;
+//}
 
 void paramsTest(int num, ...){
 
