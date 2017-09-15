@@ -10,12 +10,12 @@
 void fun(void);
 void (*functonPointer)(void);  // 声明函数指针加上()号
 
-int main(void){
-
-	functonPointer = &fun;
-	functonPointer();
-	return 0;
-}
+//int main(void){
+//
+//	functonPointer = &fun;
+//	functonPointer();
+//	return 0;
+//}
 
 
 void fun(void){
