@@ -13,11 +13,12 @@ struct Link{
 struct Link * createLink();
 void printLink(struct Link * );
 
-int main(void){
-	struct Link * linkHead = createLink();
-	printLink(linkHead);
-	return 0;
-}
+//int main(void){
+//	struct Link * linkHead = createLink();
+//	printLink(linkHead);
+//	free(linkHead); //释放内容等操作  其他节点类似
+//	return 0;
+//}
 
 
 struct Link * createLink(){
