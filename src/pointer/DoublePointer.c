@@ -17,7 +17,11 @@ int main(void){
 
 	int **pp = &p;
 
+	printf("%d\n", *p);
 	printf("%d\n", **pp);
+
+	printf("%p\n",p);
+	printf("%p\n",*pp);  //储存着上面p的地址值
 
 	return 0;
 }
