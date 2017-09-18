@@ -10,14 +10,14 @@
 
 #include<stdio.h>
 
-int main(void){
-
-	void *vv = "abc";
-	printf("vv-char[] %s\n", vv);
-
-	int i = 123456;
-	vv = &i;
-	printf("vv->int %d\n", *((int*)vv)); //double 解引用
-
-	return 0;
-}
+//int main(void){
+//
+//	void *vv = "abc";
+//	printf("vv-char[] %s\n", vv);
+//
+//	int i = 123456;
+//	vv = &i;
+//	printf("vv->int %d\n", *((int*)vv)); //双 解引用
+//
+//	return 0;
+//}
