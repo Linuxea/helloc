@@ -28,9 +28,13 @@ int cal(int (*op)(int,int),int x,int y){
 	return (*op)(x,y);
 }
 
-int main(void){
-
-	printf("1 with 2 add is:%d\n", cal(aadd,1,2));
-	printf("1 with 2 sub is:%d\n", cal(sub,1,2));
-	return 0;
-}
+//int main(void){
+//
+//	printf("1 with 2 add is:%d\n", cal(aadd,1,2));
+//	printf("1 with 2 sub is:%d\n", cal(sub,1,2));
+//
+//	int (*haha)(int,int) = aadd;
+//	int result = (*haha)(3,10);
+//	printf("函数就是指针:%d\n",result);
+//	return 0;
+//}
