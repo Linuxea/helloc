@@ -16,8 +16,8 @@ char * hello(){
 	return "hello";
 }
 
-int main(void){
-
-	printf("%s\n", hello());
-	return 0;
-}
+//int main(void){
+//
+//	printf("%s\n", hello());
+//	return 0;
+//}
