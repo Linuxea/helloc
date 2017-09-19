@@ -34,30 +34,30 @@ void initStack(St * st){
 	st->top = st->base;
 	st->stack_size = INIT_SIZE;
 }
-void push(St *st, ELEM_TYPE val){
-	if(st == NULL)
-		return;
-	//是否有空间
-	if(st->top - st->base > st->stack_size){
-		//重分配
-		st->base = (ELEM_TYPE*)realloc(st->base, st.stack_size + (sizeof(ELEM_TYPE) * INCRE_STEP));
-		st->base = st->base + st.stack_size;
-		st->stack_size += INCRE_STEP;
-	}
-	*(++st->top) = val;
-}
+//void push(St *st, ELEM_TYPE val){
+//	if(st == NULL)
+//		return;
+//	//是否有空间
+//	if(st->top - st->base > st->stack_size){
+//		//重分配
+//		st->base = (ELEM_TYPE*)realloc(st->base, st.stack_size + (sizeof(ELEM_TYPE) * INCRE_STEP));
+//		st->base = st->base + st.stack_size;
+//		st->stack_size += INCRE_STEP;
+//	}
+//	*(++st->top) = val;
+//}
 
-int main(void){
-
-	St *st;
-	initStack(st);
-	while(1){
-		int a;
-		scanf("请输入:\n%d", &a);
-		push(st,a);
-	}
-	return 0;
-}
+//int main(void){
+//
+//	St *st;
+//	initStack(st);
+//	while(1){
+//		int a;
+//		scanf("请输入:\n%d", &a);
+////		push(st,a);
+//	}
+//	return 0;
+//}
 
 
 
