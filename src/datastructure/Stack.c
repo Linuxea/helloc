@@ -1,7 +1,7 @@
 /*
  * Stack.c
  *
- *  Created on: 2017ƒÍ9‘¬19»’
+ *  Created on: 2017ÔøΩÔøΩ9ÔøΩÔøΩ19ÔøΩÔøΩ
  *      Author: linuxea.lin
  */
 
@@ -30,34 +30,32 @@ void clear(St *st);
 void destroy(St *st);
 
 void initStack(St * st){
-	st->base = (ELEM_TYPE*)malloc(sizeof(ELEM_TYPE) * INIT_SIZE); // malloc  «∑µªÿø’÷∏’Î «ø÷∆◊™ªª
+	st->base = (ELEM_TYPE*)malloc(sizeof(ELEM_TYPE) * INIT_SIZE); // malloc ÔøΩ«∑ÔøΩÔøΩÿøÔøΩ÷∏ÔøΩÔøΩ «øÔøΩÔøΩ◊™ÔøΩÔøΩ
 	st->top = st->base;
 	st->stack_size = INIT_SIZE;
 }
-//void push(St *st, ELEM_TYPE val){
-//	if(st == NULL)
-//		return;
-//	// «∑Ò”–ø’º‰
-//	if(st->top - st->base > st->stack_size){
-//		//÷ÿ∑÷≈‰
-//		st->base = (ELEM_TYPE*)realloc(st->base, st.stack_size + (sizeof(ELEM_TYPE) * INCRE_STEP));
-//		st->base = st->base + st.stack_size;
-//		st->stack_size += INCRE_STEP;
-//	}
-//	*(++st->top) = val;
-//}
+void push(St *st, ELEM_TYPE val){
+	if(st == NULL)
+		return;
+	if(st->top - st->base > st->stack_size){
+		st->base = (ELEM_TYPE*)realloc(st->base, st->stack_size + (sizeof(ELEM_TYPE) * INCRE_STEP));
+		st->base = st->base + st->stack_size;
+		st->stack_size += INCRE_STEP;
+	}
+	*(++st->top) = val;
+}
 
-//int main(void){
-//
-//	St *st;
-//	initStack(st);
-//	while(1){
-//		int a;
-//		scanf("«Î ‰»Î:\n%d", &a);
-////		push(st,a);
-//	}
-//	return 0;
-//}
+int main(void){
+
+	St *st;
+	initStack(st);
+	while(1){
+		int a;
+		scanf("«Î ‰»Î:\n%d", &a);
+		push(st,a);
+	}
+	return 0;
+}
 
 
 
