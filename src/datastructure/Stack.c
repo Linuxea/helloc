@@ -27,6 +27,7 @@ void push(St *st, ELEM_TYPE val);
 void post(St *st, ELEM_TYPE *val);
 void getLen(St *st);
 void clear(St *st);
+void stackPrint(St *st);
 void destroy(St *st);
 
 void initStack(St * st){
@@ -45,14 +46,25 @@ void push(St *st, ELEM_TYPE val){
 	*(++st->top) = val;
 }
 
+void stackPrint(St *st){
+	while(1){
+		if(st->base >= st->top){
+			break;
+		}
+		int current = *(st->base++);
+		printf("%d\t", current);
+	}
+}
+
 int main(void){
 
-	St *st;
+	St *st = (St *)malloc(st->stack_size);
 	initStack(st);
 	while(1){
 		int a;
 		scanf("«Î ‰»Î:\n%d", &a);
 		push(st,a);
+//		stackPrint(st);
 	}
 	return 0;
 }
