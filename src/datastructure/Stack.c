@@ -56,18 +56,18 @@ void stackPrint(St *st){
 	}
 }
 
-int main(void){
-
-	St *st = (St *)malloc(st->stack_size);
-	initStack(st);
-	while(1){
-		int a;
-		scanf("«Î ‰»Î:\n%d", &a);
-		push(st,a);
-//		stackPrint(st);
-	}
-	return 0;
-}
+//int main(void){
+//
+//	St *st;
+//	initStack(st);
+//	while(1){
+//		int a;
+//		scanf("«Î ‰»Î:\n%d", &a);
+//		push(st,a);
+////		stackPrint(st);
+//	}
+//	return 0;
+//}
 
 
 
