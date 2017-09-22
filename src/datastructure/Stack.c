@@ -11,8 +11,8 @@
 #include<malloc.h>
 #include<memory.h>
 
-#define INIT_SIZE 20
-#define INCRE_STEP 10
+#define INIT_SIZE 3
+#define INCRE_STEP 2
 
 typedef int ELEM_TYPE;
 
@@ -38,9 +38,9 @@ void initStack(St * st){
 void push(St *st, ELEM_TYPE val){
 	if(st == NULL)
 		return;
-	if(st->top - st->base > INIT_SIZE){
-		st->base = (ELEM_TYPE*)realloc(st->base, st->stack_size + (sizeof(ELEM_TYPE) * INCRE_STEP));
-		st->base = st->base + st->stack_size;
+	if(st->top - st->base >= INIT_SIZE){
+		st->base = (ELEM_TYPE*)realloc(st->base,  (sizeof(ELEM_TYPE) * (INCRE_STEP +st->stack_size)));
+		st->base = st->base + sizeof(ELEM_TYPE) * (INCRE_STEP +st->stack_size);
 		st->stack_size += INCRE_STEP;
 	}
 	st->stack_size ++;
