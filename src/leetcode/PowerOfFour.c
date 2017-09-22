@@ -29,12 +29,13 @@ typedef int bool;
 bool isPowerOfFour(int i);
 
 bool isPowerOfFour(int num) {
+	num = sqrt(num);
     bool RESULT = FALSE;
-    long sum;
+    long sum = 1;
+    int k;
     for(int j = 0;j <= num; j++){
 //    	printf("now j is:%d\n",j);
-    	sum = 1;
-    	int k = 1;
+    	k = sum;
     	for(;k<=j;k++){
 //    		printf("now k is:%d\n",k);
     		sum *= 4;
@@ -53,5 +54,6 @@ bool isPowerOfFour(int num) {
 }
 
 int main(void){
-	printf("%d\t", isPowerOfFour(59049));
+	printf("%d\n", sqrt(1));
+	printf("%d\t", isPowerOfFour(1162261466));
 }
