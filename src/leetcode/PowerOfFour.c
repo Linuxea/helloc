@@ -29,27 +29,13 @@ typedef int bool;
 bool isPowerOfFour(int i);
 
 bool isPowerOfFour(int num) {
-    bool RESULT = FALSE;
-    long sum = 1;
-    int k;
-    for(int j = 0;j <= num; j++){
-//    	printf("now j is:%d\n",j);
-    	k = sum;
-    	for(;k<=j;k++){
-//    		printf("now k is:%d\n",k);
-    		sum *= 4;
-//			printf("now result is:%d\n",sum);
-			if(sum == num){
-				RESULT = TRUE;
-				break;
-			}
-    	}
-
-//    	printf("\n");
-
-	}
-
-    return RESULT;
+    if (num < 1) {
+        return FALSE;
+    }
+    if (num == 1) {
+        return TRUE;
+    }
+    return ((num % 4 == 0) && (isPowerOfFour(num / 4)));
 }
 
 int main(void){
