@@ -1,7 +1,6 @@
 /*
  * Stack.c
  *
- *  Created on: 2017��9��19��
  *      Author: linuxea.lin
  */
 
@@ -75,16 +74,3 @@ int main(void){
 
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
