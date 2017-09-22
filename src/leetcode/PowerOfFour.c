@@ -38,6 +38,6 @@ bool isPowerOfFour(int num) {
     return ((num % 4 == 0) && (isPowerOfFour(num / 4)));
 }
 
-int main(void){
-	printf("%d\t", isPowerOfFour(1162261466));
-}
+//int main(void){
+//	printf("%d\t", isPowerOfFour(1162261466));
+//}
