@@ -11,13 +11,13 @@
 #include<stdio.h>
 #define ok "OK"
 
-int main(void){
-
-#ifdef ok
-	printf("ok");
-#else
-	printf("not ok");
-#endif
-
-	return 0;
-}
+//int main(void){
+//
+//#ifdef ok
+//	printf("ok");
+//#else
+//	printf("not ok");
+//#endif
+//
+//	return 0;
+//}

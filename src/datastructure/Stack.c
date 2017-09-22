@@ -24,50 +24,57 @@ typedef struct Stack{
 
 void initStack(St * st);
 void push(St *st, ELEM_TYPE val);
-void post(St *st, ELEM_TYPE *val);
-void getLen(St *st);
-void clear(St *st);
 void stackPrint(St *st);
-void destroy(St *st);
+//void post(St *st, ELEM_TYPE *val);
+//void getLen(St *st);
+//void clear(St *st);
+//void destroy(St *st);
 
 void initStack(St * st){
-	st->base = (ELEM_TYPE*)malloc(sizeof(ELEM_TYPE) * INIT_SIZE); // malloc ï¿½Ç·ï¿½ï¿½Ø¿ï¿½Ö¸ï¿½ï¿½ Ç¿ï¿½ï¿½×ªï¿½ï¿½
+	st->base = (ELEM_TYPE*)malloc(sizeof(ELEM_TYPE) * INIT_SIZE); // malloc
 	st->top = st->base;
-	st->stack_size = INIT_SIZE;
+	st->stack_size = 0;
 }
 void push(St *st, ELEM_TYPE val){
 	if(st == NULL)
 		return;
-	if(st->top - st->base > st->stack_size){
+	if(st->top - st->base > INIT_SIZE){
 		st->base = (ELEM_TYPE*)realloc(st->base, st->stack_size + (sizeof(ELEM_TYPE) * INCRE_STEP));
 		st->base = st->base + st->stack_size;
 		st->stack_size += INCRE_STEP;
 	}
-	*(++st->top) = val;
+	st->stack_size ++;
+	*(st->top++) = val;
 }
 
 void stackPrint(St *st){
-	while(1){
-		if(st->base >= st->top){
-			break;
-		}
+	printf("\n");
+	for(int i = 0;i<st->stack_size;i++){
 		int current = *(st->base++);
-		printf("%d\t", current);
+		printf("%d->", current);
 	}
+
+	printf("\n");
 }
 
-//int main(void){
-//
-//	St *st;
-//	initStack(st);
-//	while(1){
-//		int a;
-//		scanf("ÇëÊäÈë:\n%d", &a);
-//		push(st,a);
-////		stackPrint(st);
-//	}
-//	return 0;
-//}
+int main(void){
+
+	St *st;
+	initStack(st);
+	while(1){
+		int a;
+		scanf("%d", &a);
+		if(a>0){
+			push(st,a);
+		}else{
+			break;
+		}
+	}
+
+	stackPrint(st);
+
+	return 0;
+}
 
 
 

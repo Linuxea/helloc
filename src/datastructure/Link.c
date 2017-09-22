@@ -1,5 +1,5 @@
 
-//Á´±í
+//ï¿½ï¿½ï¿½ï¿½
 
 #include<stdio.h>
 #include<string.h>
@@ -16,7 +16,7 @@ void printLink(struct Link * );
 //int main(void){
 //	struct Link * linkHead = createLink();
 //	printLink(linkHead);
-//	free(linkHead); //ÊÍ·ÅÄÚÈÝµÈ²Ù×÷  ÆäËû½ÚµãÀàËÆ
+//	free(linkHead); //ï¿½Í·ï¿½ï¿½ï¿½ï¿½ÝµÈ²ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½
 //	return 0;
 //}
 
@@ -35,7 +35,7 @@ struct Link * createLink(){
 	struct Link * next_next_next = malloc(sizeof(struct Link));
 	strcpy(next_next_next->chs, "i am a head.next_next_next");
 
-	// ´´½¨Á´µÄ¹ØÏµ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½Ïµ
 	head->next = next;
 	next->next = next_next;
 	next_next->next = next_next_next;
