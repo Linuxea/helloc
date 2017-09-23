@@ -22,6 +22,10 @@ int main(void){
 	int temp;
 	while((temp = getc(fp)) != EOF && putc(temp, fp2)); // i fell it's unnecessary to judge if it is EOF
 
+	fclose(fp);
+	fclose(fp2);
+	// remember to close file sources
+
 	return 0;
 }
 
