@@ -6,6 +6,9 @@
  */
 
 // what is getchar
+// scanf can only read on char
+// but while true can read the chars you input one by one
+// so you can type many chars
 
 #include<stdio.h>
 
