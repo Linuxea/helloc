@@ -41,9 +41,10 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="defi|leetcode|algorithm|datastructure|union|array|function|memory|io|from|pointer|c99|struct|type|exception|changeableparam" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="base|defi|leetcode|algorithm|datastructure|union|array|function|memory|io|from|pointer|c99|struct|type|exception|changeableparam" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 						<entry excluding="sort/BubbleSort.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/algorithm"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/array"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/base"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/c99"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/changeableparam"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/datastructure"/>
@@ -102,9 +103,10 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="defi|leetcode|algorithm|datastructure|union|array|function|memory|io|from|pointer|c99|struct|type|exception|changeableparam" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="base|defi|leetcode|algorithm|datastructure|union|array|function|memory|io|from|pointer|c99|struct|type|exception|changeableparam" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 						<entry excluding="sort/BubbleSort.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/algorithm"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/array"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/base"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/c99"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/changeableparam"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/datastructure"/>

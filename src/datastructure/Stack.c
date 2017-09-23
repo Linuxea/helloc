@@ -56,21 +56,21 @@ void stackPrint(St *st){
 	printf("\n");
 }
 
-int main(void){
-
-	St *st;
-	initStack(st);
-	while(1){
-		int a;
-		scanf("%d", &a);
-		if(a>0){
-			push(st,a);
-		}else{
-			break;
-		}
-	}
-
-	stackPrint(st);
-
-	return 0;
-}
+//int main(void){
+//
+//	St *st;
+//	initStack(st);
+//	while(1){
+//		int a;
+//		scanf("%d", &a);
+//		if(a>0){
+//			push(st,a);
+//		}else{
+//			break;
+//		}
+//	}
+//
+//	stackPrint(st);
+//
+//	return 0;
+//}
