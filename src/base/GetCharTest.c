@@ -10,12 +10,14 @@
 // but while true can read the chars you input one by one
 // so you can type many chars
 
+// scanf is one time !!!
+
 #include<stdio.h>
 
 int main(void){
 
 	char c;
-	while(scanf("%c", &c)){
+	while(scanf("%c", &c)){ // scanf always return 1 why? think think and you know
 		if(c == 'o')break;
 		printf("%c", c);
 	}
