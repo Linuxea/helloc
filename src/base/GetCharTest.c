@@ -8,12 +8,11 @@
 
 #include<stdio.h>
 
-int main(void){
-
-	// input limit ten chars
-	int i = 0;
-	while(putchar(getchar()) && ++i<10); // will continue forever because wrap is not a invalid return value
-
-	return 0;
-}
+//int main(void){
+//
+//	// how to expree EOF with keyboard
+//	while(putchar(getchar())); // will continue forever because wrap is not a invalid return value
+//
+//	return 0;
+//}
 
