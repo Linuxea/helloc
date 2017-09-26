@@ -1,2 +1,2 @@
 # helloc
-## learning for c
+## 我时不时质疑  c语言不是最独一无二的语言
