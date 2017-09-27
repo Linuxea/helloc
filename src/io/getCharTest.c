@@ -1,7 +1,7 @@
 /*
  * getCharTest.c
  *
- *  Created on: 2017Äê9ÔÂ13ÈÕ
+ *  Created on: 2017ï¿½ï¿½9ï¿½ï¿½13ï¿½ï¿½
  *      Author: linuxea.lin
  */
 
@@ -12,7 +12,9 @@ void getCharTest();
 
 
 //int main(void){
+//	printf("hello\n");
 //	getCharTest();
+//	getchar();
 //	return 0;
 //}
 
@@ -25,5 +27,4 @@ void getCharTest(){
 	printf("you input is");
 
 	putchar(c);
-
 }
