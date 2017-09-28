@@ -1,7 +1,7 @@
 /*
  * DfsDemo001.c
  *
- *  Created on: 2017Äê9ÔÂ25ÈÕ
+ *  Created on: 2017ï¿½ï¿½9ï¿½ï¿½25ï¿½ï¿½
  *      Author: linuxea.lin
  */
 
@@ -34,9 +34,9 @@ void dfsPrint(int level){
 	}
 }
 
-int main(void){
-
-	dfsPrint(0);
-
-	return 0;
-}
+//int main(void){
+//
+//	dfsPrint(0);
+//
+//	return 0;
+//}
