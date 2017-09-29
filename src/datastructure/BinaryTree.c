@@ -2,7 +2,6 @@
  * BinaryTree.c
  *
  *  Created on: 2017年9月29日
- *      Author: linuxea
  */
 
 
@@ -29,21 +28,19 @@ void prePrint(Tree * tree);
 Tree *createBSTTree(Tree *tree, ELEMENT_TYPE value){
 
 	if(NULL == tree){
+
 		tree = (Tree*)malloc(sizeof(Tree));
 		tree->data = value;
 		tree->left = tree->right = NULL;
-	}else{
 
-		printf("有木有进来呢?\n");
-		fflush(stdout);
+	}else{
 
 		if(tree->data > value){
 			tree->left = createBSTTree(tree->left, value);
 		}else if(tree->data < value){
 			tree->right = createBSTTree(tree->right, value);
 		}else{
-			printf("equals(pass)");
-			fflush(stdout);
+			//pass
 		}
 	}
 
@@ -59,20 +56,43 @@ void prePrint(Tree * tree){
 }
 
 
+void midPrint(Tree * tree){
+	if(NULL ==  tree)return;
+	midPrint(tree->left);
+	printf("%d->",tree->data);
+	midPrint(tree->right);
+}
+
+
+void postPrint(Tree * tree){
+	if(NULL ==  tree)return;
+	postPrint(tree->left);
+	postPrint(tree->right);
+	printf("%d->",tree->data);
+}
+
+
 int main(void){
 
 	Tree * myTree = NULL;
 
-	createBSTTree(myTree,1);
-	createBSTTree(myTree,2);
-	createBSTTree(myTree,3);
-	createBSTTree(myTree,3);
-	createBSTTree(myTree,5);
+	Tree * one = createBSTTree(myTree,1); // create root
+	createBSTTree(one,2);
+	createBSTTree(one,3);
+	createBSTTree(one,9);
+	createBSTTree(one,5);
 
-	printf("create over");
 	fflush(stdout);
 
-	prePrint(myTree);
+	prePrint(one);
+	printf("prePrint over\n");
+	midPrint(one);
+	printf("midPrint over\n");
+	postPrint(one);
+	printf("postPrint over\n");
+
+	free(myTree);
+	free(one);
 
 	return 0;
 }
