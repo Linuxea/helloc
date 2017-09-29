@@ -30,14 +30,14 @@ int binarySearch(int arr[], int k){
 
 }
 
-int main(void){
-
-	int arr[] = {12,23,45,47,58,69,74,85,99,102};
-	int result = binarySearch(arr, 85);
-	printf("the result is:%d\n", result);
-
-	return 0;
-}
+//int main(void){
+//
+//	int arr[] = {12,23,45,47,58,69,74,85,99,102};
+//	int result = binarySearch(arr, 85);
+//	printf("the result is:%d\n", result);
+//
+//	return 0;
+//}
 
 
 
