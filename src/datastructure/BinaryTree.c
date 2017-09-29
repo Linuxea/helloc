@@ -27,6 +27,7 @@ void prePrint(Tree * tree);
 
 
 Tree *createBSTTree(Tree *tree, ELEMENT_TYPE value){
+
 	if(NULL == tree){
 		tree = (Tree*)malloc(sizeof(Tree));
 		tree->data = value;
@@ -36,8 +37,6 @@ Tree *createBSTTree(Tree *tree, ELEMENT_TYPE value){
 		printf("有木有进来呢?\n");
 		fflush(stdout);
 
-		printf("%d\n", tree->data);
-		fflush(stdout);
 		if(tree->data > value){
 			tree->left = createBSTTree(tree->left, value);
 		}else if(tree->data < value){
