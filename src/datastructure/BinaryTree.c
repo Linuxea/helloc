@@ -27,23 +27,25 @@ void prePrint(Tree * tree);
 
 
 Tree *createBSTTree(Tree *tree, ELEMENT_TYPE value){
-	Tree* temp = tree;
-	if(NULL == temp){
-		temp = (Tree*)malloc(sizeof(Tree));
-		temp->data = value;
-		temp->left = temp->right = NULL;
-	}
-
-	printf("%d vs %d\n", temp->data, value);
-	fflush(stdout);
-
-	if(temp->data > value){
-		temp->left = createBSTTree(temp->left, value);
-	}else if(temp->data < value){
-		temp->right = createBSTTree(temp->right, value);
+	if(NULL == tree){
+		tree = (Tree*)malloc(sizeof(Tree));
+		tree->data = value;
+		tree->left = tree->right = NULL;
 	}else{
-		printf("equals(pass)\n");
+
+		printf("有木有进来呢?\n");
 		fflush(stdout);
+
+		printf("%d\n", tree->data);
+		fflush(stdout);
+		if(tree->data > value){
+			tree->left = createBSTTree(tree->left, value);
+		}else if(tree->data < value){
+			tree->right = createBSTTree(tree->right, value);
+		}else{
+			printf("equals(pass)");
+			fflush(stdout);
+		}
 	}
 
 	return tree;
@@ -51,11 +53,10 @@ Tree *createBSTTree(Tree *tree, ELEMENT_TYPE value){
 
 
 void prePrint(Tree * tree){
-	if(NULL !=  tree){
-		printf("%d->",tree->data);
-		prePrint(tree->left);
-		prePrint(tree->right);
-	}
+	if(NULL ==  tree)return;
+	printf("%d->",tree->data);
+	prePrint(tree->left);
+	prePrint(tree->right);
 }
 
 
@@ -64,12 +65,12 @@ int main(void){
 	Tree * myTree = NULL;
 
 	createBSTTree(myTree,1);
-	createBSTTree(myTree,0);
+	createBSTTree(myTree,2);
 	createBSTTree(myTree,3);
 	createBSTTree(myTree,3);
 	createBSTTree(myTree,5);
 
-	printf("is null?!!%d\n", myTree == NULL);
+	printf("create over");
 	fflush(stdout);
 
 	prePrint(myTree);
