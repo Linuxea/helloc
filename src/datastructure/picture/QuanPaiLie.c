@@ -34,11 +34,11 @@ void quanPaiLie(int arr[], int level){
 	}
 }
 
-int main(void){
-
-	int arr[] = {1,3,5,7,9};
-	quanPaiLie(arr, 0);
-	return 0;
-}
+//int main(void){
+//
+//	int arr[] = {1,3,5,7,9};
+//	quanPaiLie(arr, 0);
+//	return 0;
+//}
 
 
