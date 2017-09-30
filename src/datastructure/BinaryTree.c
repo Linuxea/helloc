@@ -72,30 +72,30 @@ void postPrint(Tree * tree){
 }
 
 
-int main(void){
-
-	Tree * myTree = NULL;
-
-	Tree * one = createBSTTree(myTree,1); // create root
-	createBSTTree(one,2);
-	createBSTTree(one,3);
-	createBSTTree(one,9);
-	createBSTTree(one,5);
-
-	fflush(stdout);
-
-	prePrint(one);
-	printf("prePrint over\n");
-	midPrint(one);
-	printf("midPrint over\n");
-	postPrint(one);
-	printf("postPrint over\n");
-
-	free(myTree);
-	free(one);
-
-	return 0;
-}
+//int main(void){
+//
+//	Tree * myTree = NULL;
+//
+//	Tree * root = createBSTTree(myTree,1); // create root
+//	createBSTTree(root,2);
+//	createBSTTree(root,3);
+//	createBSTTree(root,9);
+//	createBSTTree(root,5);
+//
+//	fflush(stdout);
+//
+//	prePrint(root);
+//	printf("prePrint over\n");
+//	midPrint(root);
+//	printf("midPrint over\n");
+//	postPrint(root);
+//	printf("postPrint over\n");
+//
+//	free(myTree);
+//	free(root);
+//
+//	return 0;
+//}
 
 
 
