@@ -44,13 +44,13 @@ void printArr(int arr[], int N){
 	}
 }
 
-int main(void){
-
-	int arr[] = {1,3,5,7,9,2,4,6,8,10,-9};
-	bubble_sort(arr, SIZE);
-	printArr(arr, SIZE);
-	return 0;
-}
+//int main(void){
+//
+//	int arr[] = {1,3,5,7,9,2,4,6,8,10,-9};
+//	bubble_sort(arr, SIZE);
+//	printArr(arr, SIZE);
+//	return 0;
+//}
 
 
 
