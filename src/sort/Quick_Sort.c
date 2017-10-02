@@ -48,11 +48,11 @@ void quick_sort(int arr[], int left, int right){
 
 }
 
-int main(void){
-
-	int arr[] = {1,3,5,7,9,2,4,6,8,10};
-	quick_sort_wrap(arr, LENGTH);
-
-	return 0;
-}
+//int main(void){
+//
+//	int arr[] = {1,3,5,7,9,2,4,6,8,10};
+//	quick_sort_wrap(arr, LENGTH);
+//
+//	return 0;
+//}
 

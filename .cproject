@@ -42,7 +42,8 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry excluding="sort|search|file|game|defi|leetcode|algorithm|datastructure|union|array|function|memory|io|from|pointer|c99|struct|type|exception|changeableparam" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry excluding="sort/BubbleSort.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/algorithm"/>
+						<entry excluding="string|sort/BubbleSort.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/algorithm"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/algorithm/string"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/array"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/c99"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/changeableparam"/>
@@ -107,7 +108,8 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry excluding="sort|search|file|game|defi|leetcode|algorithm|datastructure|union|array|function|memory|io|from|pointer|c99|struct|type|exception|changeableparam" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry excluding="sort/BubbleSort.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/algorithm"/>
+						<entry excluding="string|sort/BubbleSort.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/algorithm"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/algorithm/string"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/array"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/c99"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/changeableparam"/>
