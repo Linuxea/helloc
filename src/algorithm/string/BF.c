@@ -21,10 +21,12 @@ int bf(char* sub, char* parent){
 	int a = 0;
 	int b = 0;
 
-	while(a<i && b<j){
+	while(a<i && b<j){   // important
 		if(sub[a] == parent[b]){
+			printf("%c vs %c\n", sub[a], parent[b]);
 			a++; b++;
 		}else{
+			printf("comint on\n");
 			a = a-b+1; b = 0; // *****
 		}
 	}
