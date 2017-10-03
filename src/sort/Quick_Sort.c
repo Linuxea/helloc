@@ -7,7 +7,7 @@
 
 // quick sort
 #include<stdio.h>
-#define LENGTH 10
+#define LENGTH 4
 
 void quick_sort(int[], int, int);
 void quick_sort_wrap(int[] ,int);
@@ -57,7 +57,7 @@ void quick_sort(int arr[], int left, int right){
 
 //int main(void){
 //
-//	int arr[] = {1,3,5,7,9,2,4,6,8,10};
+//	int arr[] = {4,3,2,1};
 //	quick_sort_wrap(arr, LENGTH);
 //
 //	return 0;
