@@ -27,6 +27,7 @@ void quick_sort(int arr[], int left, int right){
 	int i = left;
 	int j = right;
 	int key = arr[left]; // pivot
+	printf("prvot:%d\n", key);
 
 	while(i<j){ // so while
 
@@ -43,6 +44,12 @@ void quick_sort(int arr[], int left, int right){
 	}
 
 	arr[i] = key;
+
+	for(int i = 0;i<LENGTH;i++){
+		printf("%d -> ", arr[i]);
+	}
+	printf("on over\n");
+
 	quick_sort(arr, left, i-1);
 	quick_sort(arr, j+1, right);
 
