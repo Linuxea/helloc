@@ -6,16 +6,14 @@
 
 // 冒泡排序基本版
 
-#include<stdio.h>
-
 void printArray(int *);
 
-void printArray(int *p){
-	for(int i = 0;i<10;i++){
-		printf("%d\t", *(p+i));
-	}
-	printf("\n");
-}
+//void printArray(int *p){
+//	for(int i = 0;i<10;i++){
+//		printf("%d\t", *(p+i));
+//	}
+//	printf("\n");
+//}
 
 //int main(void){
 //
