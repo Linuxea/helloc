@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/Add.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/ArrayTest.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/String.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/Why.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/define.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/forTest.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/helloc.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/recursive.c" charset="GBK" />
+  </component>
+</project>

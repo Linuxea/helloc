@@ -21,8 +21,3 @@ void selection_sort(int arr[], int N) {
     }
 
 }
-
-int main() {
-    int arr[] = {1, 3, 5, 7, 9, 22, 21, -9, 0, 63};
-    selection_sort(arr, SIZE);
-}

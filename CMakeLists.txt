@@ -1,0 +1,75 @@
+cmake_minimum_required(VERSION 3.9)
+project(helloc)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
+
+add_executable(helloc
+        src/algorithm/string/BF.c
+        src/algorithm/BubbleSort.c
+        src/algorithm/DfsDemo001.c
+        src/array/Demension.c
+        src/array/DemensionWithPointer.c
+        src/c99/DefineInFor.c
+        src/changeableparam/Params.c
+        src/datastructure/picture/QuanPaiLie.c
+        src/datastructure/BinaryTree.c
+        src/datastructure/Link.c
+        src/datastructure/Recursive.c
+        src/datastructure/Stack.c
+        src/defi/DefindTest.c
+        src/exception/DivByZero.c
+        src/exception/Error.c
+        src/file/FileCopy.c
+        src/from/Digital.c
+        src/function/FunctionPointer.c
+        src/io/FileTest.c
+        src/io/getCharTest.c
+        src/io/ScanfTest.c
+        src/leetcode/PowerOfFour.c
+        src/macro/ADD.c
+        src/macro/MAX.c
+        src/macro/NotReturn.c
+        src/memory/MallocMemoryTest.c
+        src/pointer/AccessWithPointer.c
+        src/pointer/ArrayPointer.c
+        src/pointer/DoublePointer.c
+        src/pointer/FunctionParameterIsPointer.c
+        src/pointer/FunctionPointer.c
+        src/pointer/IntArrayPointer.c
+        src/pointer/IntDoublePointers.c
+        src/pointer/IntPointer.c
+        src/pointer/IntPointerTest.c
+        src/pointer/NullPointer.c
+        src/pointer/PointerArray.c
+        src/pointer/PointerFunction.c
+        src/pointer/StringPointer.c
+        src/pointer/SwapTwoNum.c
+        src/pointer/VoidPointer.c
+        src/search/BST.c
+        src/sort/BubbleSort.c
+        src/sort/Insert_sort.c
+        src/sort/Quick_Sort.c
+        src/sort/Select_sort.c
+        src/sort/Shell_sort.c
+        src/struct/Person.c
+        src/struct/StructPointer.c
+        src/type/DefineTest.c
+        src/type/Transfer.c
+        src/type/TypeTest.c
+        src/union/UnionDemo001.c
+        src/Add.c
+        src/ArrayTest.c
+        src/define.c
+        src/forTest.c
+        src/functionTest.c
+        src/helloc.c
+        src/operation.c
+        src/recursive.c
+        src/sizeOfTest.c
+        src/static.c
+        src/String.c
+        src/switchTest.c
+        src/threeYuanTest.c
+        src/trueTest.c
+        src/Why.c src/sort/selection_sort.c src/test.c)
