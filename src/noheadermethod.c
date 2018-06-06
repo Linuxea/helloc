@@ -2,8 +2,6 @@
 // Created by Linux on 2018/6/6.
 //
 
-#include "stdio.h"
-
 
 
 //int main(){
@@ -25,17 +23,17 @@ int run() {
     return 1;
 }
 
-int max_among(int a, int b, int c) {
-    return max_two(max_two(a, b), c);
-}
-
-int max_two(int a, int b) {
-    return a > b ? a : b;
-}
-
-int warning_implicit(int a) {
-    printf("%d\n", a);
-}
+//int max_among(int a, int b, int c) {
+//    return max_two(max_two(a, b), c);
+//}
+//
+//int max_two(int a, int b) {
+//    return a > b ? a : b;
+//}
+//
+//int warning_implicit(int a) {
+//    printf("%d\n", a);
+//}
 
 //  * 表示引用
 int swap_a_b(int *a, int *b) {
