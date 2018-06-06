@@ -72,4 +72,4 @@ add_executable(helloc
         src/switchTest.c
         src/threeYuanTest.c
         src/trueTest.c
-        src/Why.c src/sort/selection_sort.c src/giveVal.c src/integer_inverse.c src/jiecheng.c src/noheadermethod.c src/noarg.c src/getMemory.c src/memory/array_memory.c)
+        src/Why.c src/sort/selection_sort.c src/giveVal.c src/integer_inverse.c src/jiecheng.c src/noheadermethod.c src/noarg.c src/getMemory.c src/memory/array_memory.c src/memory/array_malloc.c src/memory/malloc_error.c src/array/char_array.c src/array/string_create.c src/array/string_pool.c)
