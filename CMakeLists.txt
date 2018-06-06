@@ -72,4 +72,4 @@ add_executable(helloc
         src/switchTest.c
         src/threeYuanTest.c
         src/trueTest.c
-        src/Why.c src/sort/selection_sort.c src/test.c)
+        src/Why.c src/sort/selection_sort.c src/giveVal.c src/integer_inverse.c src/jiecheng.c src/noheadermethod.c)

@@ -14,7 +14,3 @@ void giveValTest() {
     int a;
     printf("%d", a = 3);
 }
-
-int main() {
-    giveValTest();
-}
